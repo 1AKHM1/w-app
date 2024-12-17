@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#city-input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+#city-input:focus {
+    border-bottom: 2px solid #007BFF;
+}
+
+#city-input-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#city-input-btn:hover {
+    background-color: #0056b3;
+}
+
+.week-forecast {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.day-card {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.day-card .date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.day-card img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.day-card .temperature,
+.day-card .condition,
+.day-card .wind-speed,
+.day-card .humidity {
+    margin-top: 10px;
+}
+
+.hourly-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.hourly-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hourly-item img {
+    height: 40px;
+    object-fit: contain;
+}
+
+.hourly-item .time {
+    font-weight: bold;
+}
+
+.cctt{
+    display: flex;
+}
+
+.citu { text-align: center; }

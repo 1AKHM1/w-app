@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <title>GFG App</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="weather-card">
+            <h2>Weekly Weather Forecast</h2>
+            <div class="cctt">
+
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="city-input-btn" onclick="weatherFn($('#city-input').val())">Get Weather</button>
+            </div>
+            <br><br>
+            <h1 class="citu"></h1><br><br>
+            <div id="weather-info" style="display:none;">
+                <div class="week-forecast">
+                    <!-- Дни недели будут добавлены динамически через JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
